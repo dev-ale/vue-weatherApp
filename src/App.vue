@@ -2,15 +2,18 @@
   <div id="app" :class="typeof weather.main != 'undefined'
   && weather.main.temp > 16 ? 'warm' : ''">
     <main>
-      <div class="search-box">
-        <input
-          type="search"
-          class="search-bar"
-          placeholder="search..."
-          v-model="query"
-          @keypress="fetchWeather"
-        />
+      <div class="col-lg-6 col-md-6 col-sm-8" style="margin: 0 auto;">
+        <div class="search-box">
+          <input
+                  type="search"
+                  class="search-bar"
+                  placeholder="search city..."
+                  v-model="query"
+                  @keypress="fetchWeather"
+          />
+        </div>
       </div>
+
       <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
         <div class="location-box">
           <div class="location">{{ weather.name }}</div>
@@ -99,13 +102,14 @@
   }
   .search-box {
     width: 100%;
-    margin-bottom: 30px;
+    margin: auto;
+    display: block;
+
   }
   .search-box .search-bar {
     display: block;
     width: 100%;
     padding: 15px;
-
     color: #313131;
     font-size: 20px;
 
@@ -157,5 +161,5 @@
     font-weight: 500;
     text-shadow: 3px 3px rgba(0,0,0,0.25);
   }
-
+  @import'~bootstrap/dist/css/bootstrap.css'
 </style>
