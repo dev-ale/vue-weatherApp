@@ -1,4 +1,8 @@
-# vue-test
+# Weather App created with vue.js
+
+![](images/screenshot_weatherApp.png)
+
+
 
 ## Project setup
 ```
