@@ -4,7 +4,7 @@
     <main>
       <div class="search-box">
         <input
-          type="text"
+          type="search"
           class="search-bar"
           placeholder="search..."
           v-model="query"
