@@ -32,7 +32,7 @@
   data () {
     return {
       api_key: '22d1eb08c803fa5f2cf2968d4a1227a0',
-      url_base: 'http://api.openweathermap.org/data/2.5/',
+      url_base: 'https://api.openweathermap.org/data/2.5/',
       query: '',
       weather: {}
     }
